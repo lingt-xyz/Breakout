@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Breakout" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Breakout" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Breakout" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="include" />
+			<Add directory="/Arch/include" />
+			<Add directory="/usr/include/freetype2" />
+		</Compiler>
+		<Linker>
+			<Add library="GL" />
+			<Add library="glfw" />
+			<Add library="GLEW" />
+			<Add library="Xxf86vm" />
+			<Add library="SOIL" />
+			<Add library="freetype" />
+			<Add directory="/usr/lib64/nvidia" />
+			<Add directory="/Arch/lib64" />
+			<Add directory="/usr/lib64" />
+			<Add directory="/usr/lib/x86_64-linux-gnu" />
+			<Add directory="lib" />
+		</Linker>
+		<Unit filename="src/ball_object.cc" />
+		<Unit filename="src/ball_object.h" />
+		<Unit filename="src/game.cc" />
+		<Unit filename="src/game.h" />
+		<Unit filename="src/game_level.cc" />
+		<Unit filename="src/game_level.h" />
+		<Unit filename="src/game_object.cc" />
+		<Unit filename="src/game_object.h" />
+		<Unit filename="src/input.cc" />
+		<Unit filename="src/input.h" />
+		<Unit filename="src/main.cc" />
+		<Unit filename="src/particle_generator.cc" />
+		<Unit filename="src/particle_generator.h" />
+		<Unit filename="src/post_processor.cc" />
+		<Unit filename="src/post_processor.h" />
+		<Unit filename="src/power_up.h" />
+		<Unit filename="src/resource_manager.cc" />
+		<Unit filename="src/resource_manager.h" />
+		<Unit filename="src/shader.cc" />
+		<Unit filename="src/shader.h" />
+		<Unit filename="src/sprite_renderer.cc" />
+		<Unit filename="src/sprite_renderer.h" />
+		<Unit filename="src/text_renderer.cc" />
+		<Unit filename="src/text_renderer.h" />
+		<Unit filename="src/texture.cc" />
+		<Unit filename="src/texture.h" />
+		<Unit filename="src/window.cc" />
+		<Unit filename="src/window.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
